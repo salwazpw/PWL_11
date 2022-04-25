@@ -66,7 +66,7 @@ class TodoController extends Controller
     {
         $request->validated();
         $todo->todo = $request->todo;
-        $todo->todo = $request->label;
+        $todo->label = $request->label;
         $todo->done = $request->done;
         $todo->save();
 
